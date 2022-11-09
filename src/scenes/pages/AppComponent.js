@@ -20,8 +20,6 @@ function AppComponent() {
           <Sidebar />
           <main className="content">
             <Topbar />
-              
-
 
             <Outlet />
           </main>

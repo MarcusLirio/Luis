@@ -13,8 +13,10 @@ const myNavegate = useNavigate()
     email: "",
     password: "",
   });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (form.email === "" || form.password === "") {
       return;
     }
@@ -25,6 +27,7 @@ const myNavegate = useNavigate()
         Authorization: "application/json",
       },
     };
+   
     const baseUrl = "http://localhost:3000/api/login";
    
     fetch(baseUrl, options, myNavegate)
@@ -34,6 +37,7 @@ const myNavegate = useNavigate()
       .catch((error) => console.log("not possible login in the system"))
       .console.log(form.email, form.password);
   };
+
   return (
     <div id="login">
       <div className="container">

@@ -174,9 +174,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
               setSelected={setSelected}
             />
                            
-            
-            
-            
           </Box>
         </Menu>
       </ProSidebar>
